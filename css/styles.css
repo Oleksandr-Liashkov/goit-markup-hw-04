@@ -81,7 +81,9 @@ p {
   color: #2e2f42;
   display: block;
   padding: 24px 0;
-  transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address {
   font-style: normal;
@@ -106,7 +108,9 @@ p {
   font-style: normal;
   display: block;
   padding: 24px 0;
-  transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .method-list {
   display: flex;
@@ -193,7 +197,9 @@ p {
 
 .button {
   display: block;
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   padding: 16px 32px;
   background: #4d5ae5;
@@ -377,7 +383,9 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-card-link:hover,
@@ -421,7 +429,9 @@ ol {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
@@ -442,4 +452,40 @@ ol {
 
 .footer-icon {
   fill: #f4f4fd;
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  background-color: #4d5ae5;
+}
+
+.image-container-text {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-property: transform;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  top: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  position: absolute;
+  background-color: #4d5ae5;
+  display: flex;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 164px;
+  padding-left: 32px;
+}
+
+.portfolio-list-item:hover .image-container-text {
+  transform: translateY(-100%);
+  background-color: #4d5ae5;
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
