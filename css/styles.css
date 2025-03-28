@@ -171,13 +171,6 @@ p {
   display: flex;
 }
 
-.method-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .page-header {
   line-height: 1.07;
   margin-left: auto;
