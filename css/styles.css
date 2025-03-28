@@ -468,7 +468,7 @@ ol {
 
 .image-container-text {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  top: 100%;
+  top: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -477,10 +477,8 @@ ol {
   position: absolute;
   background-color: #4d5ae5;
   display: flex;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-bottom: 164px;
-  padding-left: 32px;
+  padding: 40px 32px;
+  transform: translateY(100%);
 }
 
 .portfolio-list-item:hover .image-container-text {
@@ -493,6 +491,7 @@ ol {
 }
 
 .portfolio-list-item:hover {
+  transform: translateY(0%);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
